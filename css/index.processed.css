@@ -7,8 +7,9 @@ html {
 body {
   display: table-row;
   background: #000 radial-gradient(1000px 500px, #3f546b, #000);
-  min-width: 600px;
-  min-height: 1000px; 
+  min-width: 480px;
+  min-height: 640px; 
+  margin: 0px;
 }
 
 .popup{
@@ -24,11 +25,12 @@ body {
 }
 
 .icon{
-  width: 400px;
+  width: 300px;
 
 }
 
 .icon-panel{
+  margin-top: 50px; 
   margin-bottom: 30px;
 
 }
@@ -37,22 +39,26 @@ body {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 120px; 
+  width: 100%;
+  height: 100%;
+}
 
+.temp{
+  width: 300px;
+  height: 60px;
 }
 
 .content {
-  width: 428px;
+  width: 440px;
+  height: 600px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 20px;
 }
 
 .sidebar {
-  width: 428px;
-  height: 150px;
+  width: 440px;
+  height: 110px;
   text-align: center;
-  align-content: center;
   font-family: 'Doppio One', sans-serif;
   color: #ccc;
 
@@ -110,8 +116,9 @@ h2 {
 
 .popup-panel{
   position: absolute;
-  width: 400px;
-  padding: 12px;
+  width: 440px;
+  height: 600px;
+  padding: 20px;
   top: 50%;
   left:50%;
   transform: translate(-50%,-50%);
@@ -134,7 +141,7 @@ h2 {
 
 .menubox{
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 12px;
+  padding: 20px;
   border-radius: 8px;
 }
 
@@ -142,7 +149,6 @@ h2 {
   width: 400px;
   padding: 12px;
   margin: 0 auto;
-  margin-top: 50px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   
@@ -208,7 +214,7 @@ h2 {
 .start button {
   display: block;
   width: 100%;
-  height: 100px;
+  height: 80px;
   padding: 2px 12px 4px;
   font-family: inherit;
   font-size: 45px;
@@ -233,10 +239,9 @@ h2 {
 }
 
 .board {
-  position: relative;
   width: 428px;
   height: 428px;
-  margin-top: 50px;
+  margin: 0 auto;
   background-image: url("../img/board.png");
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
 }

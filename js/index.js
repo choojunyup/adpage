@@ -3,7 +3,7 @@ const WEB_WORKER_URL = 'js/worker.js';
 const BLURBS = {
   'start': {
     header: '게임 준비!',
-    blurb: '난이도를 선택하고 게임을 시작하세요.'
+    blurb: ''
   },
   'p1-turn': {
     header: 'Your Turn',
@@ -11,7 +11,7 @@ const BLURBS = {
   },
   'p2-turn': {
     header: 'Computer\'s Turn',
-    blurb: 'AI가 최적의 수를 계산하고 있습니다.'
+    blurb: '컴퓨터가 공격을 준비하고 있습니다.'
   },
   'p1-win': {
     header: 'You Win',

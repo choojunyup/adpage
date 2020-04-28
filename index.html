@@ -5,57 +5,58 @@
   
   <title></title>
   <style type="text/css">
-  	body{
-  		margin: 0px;
-  	}
 
-  	.main{
-  		left: 0px;
-  		top: 0px;
-  		width: 100%;
-  		height: 100%;
-  		margin: 0px;
-  		border: 0px;
-  	}
+    body{
+      margin:0px;
+      /*
+      min-width: 480px;
+        min-height: 640px;
+        */
+      padding: 0px;
+    }
 
-  	.underbar{
-  		position: fixed;
-  		bottom: 0px;
-  		width: 100%;
-  		height: 91px;
-  		background: #fff;
-  	}
+    .top{
+      width: 100%;
+      height: 50px;
+      background: #eee;
+    }
 
-  	.share{
-  		left: 0px;
-  		top: 0px;
-  		width: 100%;
-  		height: 38px;
-  		margin: 2px;
-  		padding: 0px;
-  	}
+    .share{
+      margin-left: 2px;
+      position: absolute;
+      width: 160px;
+    }
 
-  	.ad{
-  		left: 0px;
-  		width: 100%;
-  		height: 50px;
-  		border: 0px;
-  	}
+    .box{
+        margin:0 auto;
+        top:0px;
+        padding:0px;
+        width: 100%;
+      height: calc(100% - 50px);
+        border: 0px;
+    }
 
   </style>
 </head>
 <body>
-	<iframe class="main" src="4tree.html"></iframe>
-	<div class="underbar">
-		<center>
-		<div class="share">    
-			<div class="addbox">
-	      		<div class="addthis_inline_share_toolbox">	
-	      	</div>
-	 	</div>
-	 	</div>
-		<!--<iframe class="ad" src="https://choojunyup.github.io/animal_img/index.html"></iframe>-->
-	</div>
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e9fdbee5395d87e"></script>
+  <div class="top">
+      <div> 
+        <ins class="kakao_ad_area"
+         data-ad-unit    = "DAN-1ibhjyjsbufdy" 
+         data-ad-width   = "320" 
+         data-ad-height  = "50"
+         ></ins> 
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+      </div>
+  </div>
+
+  <div class="share">
+        <div class="addthis_inline_share_toolbox" style="margin-top: 3px; margin-bottom: 0px;">
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e9fdbee5395d87e"></script>
+        </div>
+  </div>
+
+  <iframe class="box" id="" src="4tree.html"></iframe>
+
 </body>
 </html>

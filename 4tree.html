@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0036)http://zanghscoding.iptime.org/4mok/ -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
 <html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <!--  Meta  -->
@@ -12,9 +13,10 @@
 </head>
 <body>
 
+
   <div class="popup">
 
-  
+
     <div class="popup-panel">
 
     <div class="icon-panel">
@@ -28,7 +30,7 @@
       <div class="label-popup">
         <center>
         <img class="label-deco label-line" src="img/left.png">
-        <div class="label-line"><h2>AI 난이도 선택</h2></div>
+        <div class="label-line"><h2>게임 난이도 선택</h2></div>
         <img class="label-deco label-line" src="img/right.png">
         </center>
       </div>
@@ -90,6 +92,9 @@
         </center>
       </div>
 
+      <div class="temp">
+      </div>
+
       <div class="board">
         <div class="lit-columns">
           <div></div>
@@ -115,12 +120,48 @@
     </div>
   </div>
 
-  <div class="footer">
-  </div>
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!--<script src="js/worker.js"></script>-->
   <script src="js/index.js"></script>
+  <script type="text/javascript">
+
+      var box = document.getElementById('box');
+      var scale = 1;
+
+      resize();
+
+      function resize(){
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+        //var width = document.querySelector('body').width;
+        //var height = document.querySelector('body').height;
+        var boxW = 480;
+        var boxH = 640;
+        var ratio = boxW/boxH;
+        var present_ratio = width/height;
+
+
+        //alert(boxW +"--"+width);
+
+        if(present_ratio > ratio){
+          scale = (height/boxH)-0.2;
+        }else{
+          scale = (width/boxW)-0.2;
+        }
+        //alert(boxW +"--"+width);
+        //alert(scale);
+
+        box.style.transform='scale('+scale+')';
+        box.style.width = boxW*scale+"px";
+        box.style.height = boxH*scale+"px";
+      }
+
+      window.onresize = function(){
+        resize();
+      }
+    
+  </script>
 
 </body></html>
